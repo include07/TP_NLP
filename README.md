@@ -5,6 +5,7 @@ NLP project comparing traditional token-based classification with embedding-base
 ## Overview
 
 This notebook demonstrates two approaches to sarcasm detection:
+
 1. **Baseline**: Logistic regression on tokenized sequences
 2. **Enhanced**: Logistic regression on learned word embeddings
 
@@ -15,6 +16,7 @@ Using the Sarcasm Headlines Dataset from Kaggle containing news headlines labele
 ## Methodology
 
 ### Preprocessing
+
 - Text normalization (lowercase, punctuation removal)
 - Tokenization using NLTK
 - Stop word filtering
@@ -23,11 +25,13 @@ Using the Sarcasm Headlines Dataset from Kaggle containing news headlines labele
 ### Models
 
 **Baseline Model**
+
 - Input: Padded token indices
 - Algorithm: Logistic Regression
 - Features: Raw token IDs
 
 **Embedding Model**
+
 - Input: Same padded sequences
 - Transformation: 64-dimensional embeddings
 - Aggregation: Average pooling across sequence
@@ -36,6 +40,7 @@ Using the Sarcasm Headlines Dataset from Kaggle containing news headlines labele
 ## Key Findings
 
 The notebook compares:
+
 - Classification accuracy
 - ROC AUC scores
 - Confusion matrices
@@ -75,6 +80,7 @@ jupyter notebook sarcasm_detection.ipynb
 ## Results
 
 The notebook provides:
+
 - Detailed metrics for both approaches
 - Visual comparison of model performance
 - ROC curve analysis
@@ -89,4 +95,4 @@ The notebook provides:
 
 ---
 
-*Project for NLP coursework*
+_Project for NLP coursework_
