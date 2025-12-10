@@ -1,0 +1,7 @@
+kagglehub
+nltk
+scikit-learn
+tensorflow>=2.10.0
+pandas
+numpy
+matplotlib
